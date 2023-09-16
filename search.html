@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <title>Movie Info</title> 
+    <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="search.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+            <lord-icon src="https://cdn.lordicon.com/tdxypxgp.json" trigger="loop" delay="1000"
+              colors="primary:#121331,secondary:#08a88a" style="width:60px;height:60px">
+            </lord-icon>
+            <span class="ml-3 text-xl">vandekynang</span>
+          </a>
+          <nav
+            class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            
+            <a class="mr-5 hover:text-gray-900 uppercase" href="search.html">search </a>
+            <a class="mr-5 hover:text-gray-900 uppercase" href="signin.html">sign in</a>
+            <a class="mr-5 hover:text-gray-900 uppercase" href="sn up.html">sign up</a>
+          </nav>
+         <a href="search.html">
+            <button
+            class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" >search
+            
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+         </a> 
+         
+        </div>
+        </header>
+    
+      
+      <div class="container">
+          <div class="jumbotron">
+              <h3 class="text-center">Search for any movie</h3>
+              <form id="searchForm">
+                  <input type="text" class="form-control" id="searchText" placeholder="Search Movie">
+              </form>
+          </div>
+      </div>
+
+      <div class="container">
+          <div id="movies" class="row"></div>
+      </div>
+    
+      <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"> 
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

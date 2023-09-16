@@ -8,6 +8,7 @@ const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
 
+
 // Get initial movies
 getMovies(API_URL);
 
@@ -65,3 +66,5 @@ form.addEventListener("submit", (e) => {
     window.location.reload();
   }
 });
+
+
