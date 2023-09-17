@@ -6,7 +6,6 @@ const SEARCH_API =
 
 const main = document.getElementById("main");
 const form = document.getElementById("form");
-const search = document.getElementById("search");
 
 
 // Get initial movies
@@ -53,18 +52,6 @@ function getClassByRate(vote) {
   }
 }
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
 
-  const searchTerm = search.value;
-
-  if (searchTerm && searchTerm !== "") {
-    getMovies(SEARCH_API + searchTerm);
-
-    search.value = "";
-  } else {
-    window.location.reload();
-  }
-});
 
 
