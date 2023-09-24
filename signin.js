@@ -6,7 +6,7 @@ document.getElementById('signinbtn').addEventListener('click', function () {
     const password = document.getElementById('password').value;
     const isUserExists = data.some((user) => {
         
-        return user.username === username && user.password === password;
+        return user.username === username & user.password === password;
       });
       
       if (isUserExists) {

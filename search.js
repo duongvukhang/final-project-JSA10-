@@ -7,7 +7,7 @@ $(document).ready(() => {
   });
   
   function getMovies(searchText){
-    //make request to api using axios
+    
     // Make a request for a user with a given ID
     axios.get(`https://api.themoviedb.org/3/search/movie?api_key=3fd2be6f0c70a2a598f084ddfb75487c&language=en-US&query=${searchText}`)
       .then(function (response) {
@@ -38,17 +38,4 @@ $(document).ready(() => {
     return false;
   }
   
-  function getMovie(){
-    let movieId = sessionStorage.getItem('movieId');
-    // Make a request for a user with a given ID
-    axios.get("https://api.themoviedb.org/3/movie/" + movieId + "?api_key=3fd2be6f0c70a2a598f084ddfb75487c")
-      .then(function (response) {
-      let movie = response.data;
-      //console.log(movie);
-      
-      $('#movie').html(output);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  }
+ 

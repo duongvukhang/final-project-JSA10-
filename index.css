@@ -40,7 +40,7 @@ main {
 }
 
 .movie-info {
-  color: #eee;
+  color: #000000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,7 +63,7 @@ main {
 }
 
 .overview {
-  background-color: #fff;
+  background-color: #b27474;
   padding: 2rem;
   position: absolute;
   left: 0;
