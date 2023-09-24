@@ -18,24 +18,8 @@ header {
   justify-content: flex-end;
   background-color: var(--secondary-color);
 }
-.search {
-  background-color: transparent;
-  border: 2px solid var(--primary-color);
-  border-radius: 50px;
-  font-family: inherit;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  color: #fff;
-}
 
-.search::placeholder {
-  color: #7378c5;
-}
 
-.search:focus {
-  outline: none;
-  background-color: var(--primary-color);
-}
 
 main {
   display: flex;
@@ -64,16 +48,7 @@ main {
   letter-spacing: 0.5px;
 }
 
-.movie-info h3 {
-  margin-top: 0;
-}
 
-.movie-info span {
-  background-color: var(--primary-color);
-  padding: 0.25rem 0.5rem;
-  border-radius: 3px;
-  font-weight: bold;
-}
 
 .movie-info span.green {
   color: lightgreen;
@@ -102,4 +77,11 @@ main {
 
 .movie:hover .overview {
   transform: translateY(0);
+}
+
+footer{
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--secondary-color);
 }
