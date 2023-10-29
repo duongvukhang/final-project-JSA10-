@@ -8,10 +8,11 @@ $(document).ready(() => {
   
   function getMovies(searchText){
     
-    // Make a request for a user with a given ID
+    // resquest cho id
     axios.get(`https://api.themoviedb.org/3/search/movie?api_key=3fd2be6f0c70a2a598f084ddfb75487c&language=en-US&query=${searchText}`)
       .then(function (response) {
         let movies = response.data.results;
+        
         localStorage.setItem("movies",JSON.stringify(movies))
         let output = '';
         $.each(movies, (index, movie) => {
